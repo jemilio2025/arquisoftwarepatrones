@@ -1,0 +1,2 @@
+# arquisoftwarepatrones
+Trabajo individual
