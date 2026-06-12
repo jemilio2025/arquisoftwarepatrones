@@ -1,5 +1,4 @@
 Patrón Gatekeeper — Parte conceptual aplicada a AgentWatch (Módulo de Seguridad)
-
 ¿Qué es el Gatekeeper en esencia?
 El patrón Gatekeeper separa el código que recibe peticiones del código que las procesa. En lugar de que el sistema de negocio esté expuesto directamente al mundo exterior, se interpone un componente intermedio que valida, sanitiza y decide si una petición merece pasar. Si ese intermediario es comprometido, el atacante solo gana acceso al guardián — no a los datos ni a la lógica interna.
 La clave conceptual que Microsoft describe pero no profundiza: el Gatekeeper no es un firewall pasivo. Es un componente activo que toma decisiones basadas en el contenido de la petición, no solo en su origen o protocolo. Esto lo hace especialmente relevante cuando el "contenido" son prompts en lenguaje natural dirigidos a un LLM.
